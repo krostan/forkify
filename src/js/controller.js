@@ -11,10 +11,6 @@ import 'core-js';
 import 'regenerator-runtime';
 // https://forkify-api.herokuapp.com/v2
 
-if (module.hot) {
-  module.hot.accept();
-}
-
 ///////////////////////////////////////
 //實際上被處裡的地方
 const controlRecipes = async function () {
@@ -147,10 +143,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const newFeature = function () {
-  console.log('Welcome to the application!');
-};
-
 //發布者
 const init = function () {
   //控制本地標籤
@@ -167,7 +159,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   //
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 
 init();
