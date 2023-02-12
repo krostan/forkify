@@ -147,6 +147,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('Welcome to the application!');
+};
+
 //發布者
 const init = function () {
   //控制本地標籤
@@ -163,6 +167,7 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   //
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 
 init();
